@@ -27,10 +27,10 @@
     height: 100%;
     padding: 72px 24px 40px;
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 48px;
 }
 .mobile-menu-list,
 .menu-address,
@@ -84,11 +84,12 @@
 .mobile-menu-btn:focus .mobile-menu-icon-btn {
     fill: #fff;
 }
-
-.menu-address-wrapper{
+.menu-bottom-wrapper {
     display: flex;
     flex-direction: column;
     gap: 48px;
+}
+.menu-address-wrapper{
     font-style: normal;
 }
 .menu-address{
@@ -96,12 +97,6 @@
         flex-direction: column;
         gap: 24px;
 }
-.menu-address-wrapper .menu-social-icons {
-    display: flex;
-    gap: 40px;
-
-}
-
 .menu-social-icons .icon:hover,
 .menu-social-icons .icon:focus {
     background-color: #404BBF;
@@ -157,6 +152,10 @@
 .mobile-menu-link:hover,
 .mobile-menu-link:focus{
     color: #404BBF;
+}
+.menu-social-icons{
+    display: flex;
+    gap: 40px;
 }
 .menu-social-icons .icon {
     display: flex;

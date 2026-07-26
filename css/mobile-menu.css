@@ -29,8 +29,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 48px;
+    justify-content: space-between;
 }
 .mobile-menu-list,
 .menu-address,

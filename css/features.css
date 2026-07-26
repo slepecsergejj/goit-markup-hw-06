@@ -1,0 +1,107 @@
+.features-container h2,
+.features-container h3 {
+    color: #2e2f42;
+}
+.features-item{
+    padding: 96px 0px;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .features-item {
+    width: 768px;
+    max-width: 1440px;
+    padding: 96px 16px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .features-item {
+    padding: 120px 0px;
+    width: 1440px;
+  }
+}
+.features-list {
+    padding: 0px 16px;
+    max-width: 1158px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+@media only screen and (min-width: 768px) {
+.features-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .features-list {
+        padding: 0px 15px;
+        gap: 24px;
+        flex-direction: row;
+        }
+}
+.features-wrapper {
+    display: none;
+}
+
+@media only screen and (min-width:1158px) {
+    .features-wrapper {
+        display: flex;
+        width: 264px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+        margin-bottom: 8px;
+        background: #F4F4FD;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+    }
+}
+.features-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+@media only screen and (min-width: 768px) {
+    .features-list-item {
+        width: calc((100% - 24px) /2);
+    }
+}
+@media only screen and (min-width: 1158px) {
+.features-list-item {
+    width: calc((100% - 3 * 24px) /4);
+    }
+}
+
+.features-list-item>h3{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+@media only screen and (min-width:768px) {
+    .features-list-item>h3 {
+        text-align: left;
+    }
+}
+@media only screen and (min-width:1158px) {
+    .features-list-item>h3 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+}
+.features-list-item>p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+@media only screen and (min-width:1158px) {
+    .features-list-item>p {
+        font-weight: 400;
+    }
+}

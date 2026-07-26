@@ -4,6 +4,11 @@
     padding: 96px 0px;
     margin: 0 auto;
 }
+@media only screen and (min-width: 1158px) {
+    .portfolio-main {
+        padding: 120px 0;
+    }
+}
 
 .portfolio-container-items {
     display: flex;

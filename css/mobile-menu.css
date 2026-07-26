@@ -8,10 +8,29 @@
     width: 100%;
     height: 100%;
     background: #fff;
+    transform: translateX(100%);
+    opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    transition:
+            transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+.mobile-menu-container {
+    width: 100%;
+    height: 100%;
     padding: 72px 24px 40px;
     box-sizing: border-box;
-    transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .mobile-menu-list,
 .menu-address,
@@ -23,6 +42,9 @@
 
 .mobile-menu.is-open {
     transform: translateX(0);
+    opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
 }
 .menu-social-icons .icon {
     transition: background-color 
@@ -67,6 +89,7 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
+    font-style: normal;
 }
 .menu-address{
     display: flex;
@@ -75,13 +98,13 @@
 }
 .menu-address-wrapper .menu-social-icons {
     display: flex;
-    gap: 16px;
+    gap: 40px;
 
 }
 
-.menu-address-wrapper .icon:hover,
-.menu-address-wrapper .icon:focus {
-    background-color: #31D0AA;
+.menu-social-icons .icon:hover,
+.menu-social-icons .icon:focus {
+    background-color: #404BBF;
     color: #f4f4fd;
 }
 .menu-address-link {
@@ -91,10 +114,22 @@
     letter-spacing: 0.02em;
     color: #434455;
     text-decoration: none;
-    padding: 24px 0;
+    padding: 0;
     transition:
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-address-link.phone {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #4D5AE5;
+}
 
+.menu-address-link.email {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #434455;
 }
 .menu-address-link:hover,
 .menu-address-link:focus{
@@ -134,8 +169,4 @@
     fill: #F4F4FD;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu-social-icons .icon:hover,
-.menu-social-icons .icon:focus {
-    background-color: #404BBF;
 }

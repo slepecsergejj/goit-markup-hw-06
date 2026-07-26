@@ -1,7 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
-    width: 1440px;
     background-color: #fff;
     margin: 0;
 }
@@ -61,3 +60,24 @@ ul {
     margin: -1px;
 }
 
+.container {
+    width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .container {
+        width: 768px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .container {
+        width: 1158px;
+
+    }
+}
